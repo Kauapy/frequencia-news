@@ -1,18 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-//API cotação de moedas
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./taskbar.css";
 
 const taskbar = () => {
   return (
-    <section>
-        <h2>Frequência News</h2>
-        <Link to="/politica">Política</Link>
-        <Link to="/podcast">PodCast</Link>
-        <Link to="/sobre-nos">Sobre Nós</Link>
-    </section>
-  )
-}
+    <section className="taskbar">
+      <h2 className="titulo-taskbar">Frequência News</h2>
 
-export default taskbar
+      <div className="container-taskbar">
+        <Link to="/politica" className="links-taskbar">
+          Política
+        </Link>
+        <Link to="/podcast" className="links-taskbar">
+          PodCast
+        </Link>
+        <Link to="/sobre-nos" className="links-taskbar">
+          Sobre Nós
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default taskbar;

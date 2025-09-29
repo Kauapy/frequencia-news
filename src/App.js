@@ -1,5 +1,6 @@
 import './App.css';
 import TaskBar from './componentes/TaskBar/taskbar';
+import { BrowserRouter } from 'react-router-dom';
 
 //Pra voce importar um componente, use a sintaxe abaixo
 //import NomeDoComponente from './caminho/NomeDoComponente';
@@ -10,9 +11,9 @@ import TaskBar from './componentes/TaskBar/taskbar';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <TaskBar/>
-    </div>
+    </BrowserRouter>
   );
 }
 

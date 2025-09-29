@@ -1,0 +1,29 @@
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1.5rem 4rem; /* menos exagerado que 3rem só no topo */
+}
+
+.titulo-taskbar {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container-taskbar {
+  display: flex;
+  gap: 2rem; /* espaçamento bonito entre os links */
+}
+
+.links-taskbar {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.links-taskbar:hover {
+  color: rgb(161, 161, 161);
+}
