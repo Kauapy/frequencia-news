@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import TaskBar from './componentes/TaskBar/taskbar';
+
+//Pra voce importar um componente, use a sintaxe abaixo
+//import NomeDoComponente from './caminho/NomeDoComponente';
+
+
+//Esse App.js vai ser o pai de todos os componentes, ele vai guardar todos os outros componentes
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TaskBar/>
     </div>
   );
 }
